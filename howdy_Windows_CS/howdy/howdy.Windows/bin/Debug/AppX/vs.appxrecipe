@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CHRANDE-LAPTOP</Machine>
+    <WindowsUser>chrande</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>d0464449-5b1d-400f-94f5-898e44186049</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>987A5055DEC0D458CD1A37E92D9FB6AEFB83D61E9AA3F3CDD8FA23FE1B58AB6E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>d0464449-5b1d-400f-94f5-898e44186049_1.0.0.0_neutral__yps17xarsp2at</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>d0464449-5b1d-400f-94f5-898e44186049_yps17xarsp2at!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>d0464449-5b1d-400f-94f5-898e44186049</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=test</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-04-29T00:08:55.025</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\bin\Debug\howdy.Windows.exe">
+      <PackagePath>howdy.Windows.exe</PackagePath>
+      <Modified>2015-04-29T00:08:54.587</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\packages\WindowsAzure.MobileServices.1.3.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+      <Modified>2015-04-28T23:47:05.936</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\packages\WindowsAzure.MobileServices.1.3.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
+      <Modified>2015-04-28T23:47:05.951</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\packages\Newtonsoft.Json.6.0.1\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-04-28T23:47:05.120</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\packages\Microsoft.Net.Http.2.2.15\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+      <Modified>2015-04-28T23:47:04.510</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\packages\Microsoft.Net.Http.2.2.15\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+      <Modified>2015-04-28T23:47:04.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-04-28T23:45:06.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-04-28T23:45:06.038</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-04-28T23:45:06.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-04-28T23:45:06.069</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-04-28T23:47:12.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\bin\Debug\Common\QuickStartTask.xbf">
+      <PackagePath>Common\QuickStartTask.xbf</PackagePath>
+      <Modified>2015-04-28T23:47:12.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-04-28T23:47:12.390</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\bin\Debug\howdy.Windows.xr.xml">
+      <PackagePath>howdy.Windows.xr.xml</PackagePath>
+      <Modified>2015-04-28T23:47:12.076</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-04-29T00:08:54.821</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
