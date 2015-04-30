@@ -18,7 +18,8 @@
   "dependencies": {
     "ejs": "^2.3.1",
     "express": "~3.1.0",
-    "jade": "*"
+    "jade": "*",
+    "applicationinsights": "https://github.com/Microsoft/ApplicationInsights-node.js/releases/download/v0.15.0/applicationinsights-0.15.0.tgz"
   },
   "noAnalyze": true,
   "license": "Apache",
