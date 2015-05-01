@@ -10,6 +10,7 @@ using Windows.UI.Xaml.Navigation;
 using howdy.DataModel;
 using System.Linq;
 using Windows.Security.Credentials;
+using howdy;
 
 // To add offline sync support, add the NuGet package Microsoft.WindowsAzure.MobileServices.SQLiteStore
 // to your project. Then, uncomment the lines marked // offline sync
@@ -45,13 +46,18 @@ namespace howdy
 
         private async Task RegisterUser()
         {
+            User user = new User { Id = this.user.UserId };
             if (users == null || curr != null) { return; }
-            curr = users.Where(u => u.Id == this.user.UserId).First();
-            if (curr != null) { return; }
-            curr = await usersTable.LookupAsync(this.user.UserId);
+            try
+            {
+                curr = await usersTable.LookupAsync(user.Id);
+            }
+            catch (Exception)
+            {
+                //
+            } 
             if (curr != null) { return; }
 
-            User user = new User { Name = "Bob", Id = this.user.UserId };
             await usersTable.InsertAsync(user);
             curr = await usersTable.LookupAsync(this.user.UserId);   
         }
@@ -109,30 +115,6 @@ namespace howdy
             //await UpdateCheckedTodoItem(item);
         }
 
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
-        {
-            try
-            {
-                await AuthenticateAsync();
-            }
-            catch (Exception) { };
-
-            await RegisterUser();
-            howdy.howdyPush.UploadChannel();
-            await RefreshUsers();
-            
-        }
-
-        private async void ButtonLogin_Click(object sender, RoutedEventArgs e)
-        {
-            // Login the user and then load data from the mobile service.
-            await AuthenticateAsync();
-
-            // Hide the login button and load items from the mobile service.
-            this.ButtonLogin.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            await RefreshUsers();
-        }
-
         private async void HowdyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             if (curr == null)
@@ -140,7 +122,7 @@ namespace howdy
                 curr = await usersTable.LookupAsync(user.UserId);
             }
             Howdy send = new Howdy{ From = curr.Name, To = (((Button)sender).DataContext as User).Id};
-            howdyTable.InsertAsync(send);
+            await howdyTable.InsertAsync(send);
 
         }
 
@@ -213,12 +195,12 @@ namespace howdy
                         message = "You must log in. Login Required";
                     }
                 }
-                this.ButtonLogin.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                await RegisterUser();
+                this.hideButtonLogin();
+                howdy.howdyPush.UploadChannel();
             }
         }
 
-
+        partial void hideButtonLogin();
 
         #region Offline sync
 

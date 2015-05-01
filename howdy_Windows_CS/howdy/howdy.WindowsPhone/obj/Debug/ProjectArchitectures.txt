@@ -1,1 +1,1 @@
-C:\Users\chrande\Downloads\howdy_Windows_CS\howdy\howdy.WindowsPhone\howdy.WindowsPhone.csproj;neutral
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\howdy.WindowsPhone.csproj;neutral
