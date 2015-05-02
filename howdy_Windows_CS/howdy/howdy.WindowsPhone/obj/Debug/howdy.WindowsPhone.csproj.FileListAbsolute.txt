@@ -88,3 +88,11 @@ C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\D
 C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\ProjectArchitectures.txt
 C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\howdy.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles.intermediate
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml
+C:\Users\chrande\Downloads\howdy\howdy_Windows_CS\howdy\howdy.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate

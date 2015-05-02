@@ -1,0 +1,5 @@
+Express server listening on port \\.\pipe\cd25f3a4-dbfc-43e3-816f-4a483630849c
+[90mGET / [32m200 [90m22ms - 10.81kb[0m
+[90mGET /partners [32m200 [90m5ms - 5.65kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m10ms - 5.48kb[0m
+[90mPOST /partners/sams-cakes [31m500 [90m53ms[0m

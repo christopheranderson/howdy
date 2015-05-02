@@ -42,7 +42,7 @@ namespace howdy
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            RequestedTheme = ApplicationTheme.Light;    
+            //RequestedTheme = ApplicationTheme.Light;    
         }
 
         protected override void OnActivated(IActivatedEventArgs args)

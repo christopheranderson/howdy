@@ -54,11 +54,17 @@ namespace howdy
             }
             catch (Exception)
             {
-                //
+                //User does not exist
             } 
             if (curr != null) { return; }
-
-            await usersTable.InsertAsync(user);
+            try
+            {
+                await usersTable.InsertAsync(user);
+            }
+            catch (Exception)
+            {
+                //
+            }
             curr = await usersTable.LookupAsync(this.user.UserId);   
         }
 
@@ -117,19 +123,20 @@ namespace howdy
 
         private async void HowdyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
+            ((Button)sender).IsEnabled = false;
             if (curr == null)
             {
                 curr = await usersTable.LookupAsync(user.UserId);
             }
             Howdy send = new Howdy{ From = curr.Name, To = (((Button)sender).DataContext as User).Id};
             await howdyTable.InsertAsync(send);
-
+            ((Button)sender).IsEnabled = true;
         }
 
         // Define a member variable for storing the signed-in user. 
         private MobileServiceUser user;
 
-        private async System.Threading.Tasks.Task AuthenticateAsync()
+        private async System.Threading.Tasks.Task AuthenticateAsync(bool isNavigate = false)
         {
             string message;
             // This sample uses the Facebook provider.
@@ -150,6 +157,7 @@ namespace howdy
                 {
                     // When there is no matching resource an error occurs, which we ignore.
                 }
+
 
                 if (credential != null)
                 {
@@ -179,6 +187,11 @@ namespace howdy
                 }
                 else
                 {
+                    if (isNavigate)
+                    {
+                        return;
+                    }
+
                     try
                     {
                         // Login with the identity provider.
@@ -197,6 +210,7 @@ namespace howdy
                 }
                 this.hideButtonLogin();
                 howdy.howdyPush.UploadChannel();
+                await RefreshUsers();
             }
         }
 

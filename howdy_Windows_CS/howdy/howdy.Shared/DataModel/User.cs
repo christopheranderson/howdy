@@ -11,5 +11,8 @@ namespace howdy.DataModel
 
         [JsonProperty(PropertyName = "Name")]
         public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "color")]
+        public string color { get; set; }
     }
 }

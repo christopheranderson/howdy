@@ -9,8 +9,10 @@ namespace howdy
     public sealed partial class MainPage : Page
     {
         private bool isLoggedin = false;
+        private bool logginIn = false;
         private async void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
+            ((Button)sender).IsEnabled = false;
             try
             {
                 if (!isLoggedin)
@@ -19,6 +21,7 @@ namespace howdy
                     await AuthenticateAsync();
                     await RefreshUsers();
                     await RegisterUser();
+                    await RefreshUsers();
                     if (curr != null)
                     {
                         TitleBlock.Text = "Howdy! - " + parseDisplayName(curr.Name);
@@ -33,10 +36,31 @@ namespace howdy
             {
                 Debug.WriteLine(exc.ToString());
             }
+            ((Button)sender).IsEnabled = true;
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+            try
+            {
+                if (!isLoggedin && !logginIn)
+                {
+                    logginIn = true;
+                    await AuthenticateAsync(true);
+                    logginIn = false;
+                }
+
+                if (isLoggedin)
+                {
+                    await RefreshUsers();
+                    await RegisterUser();
+                    await RefreshUsers();
+                }
+            }
+            catch (Exception)
+            {
+                //
+            }
         }
 
         partial void hideButtonLogin()

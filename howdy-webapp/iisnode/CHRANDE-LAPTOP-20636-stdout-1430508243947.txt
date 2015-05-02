@@ -1,0 +1,11 @@
+Express server listening on port \\.\pipe\ca278bb9-084e-4e19-9ef5-9a7dc9c1c9c2
+[90mGET /partners/sams-cakes [32m200 [90m24ms - 4.49kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m6ms - 4.48kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m5ms - 4.59kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m4ms - 4.62kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m3ms - 4.61kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m2ms - 4.6kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m3ms - 4.62kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m3ms - 4.64kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m2ms - 4.62kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m3ms - 4.63kb[0m

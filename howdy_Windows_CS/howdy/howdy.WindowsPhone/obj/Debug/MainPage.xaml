@@ -9,7 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent" d:DataContext="{d:DesignData /SampleData/UserSampleData.xaml}">
+    <Grid x:Name="LayoutRoot" 
+          Background="#18bc9c" d:DataContext="{d:DesignData /SampleData/UserSampleData.xaml}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -20,25 +21,26 @@
             <TextBlock Name="TitleBlock" Text="Howdy!" Style="{StaticResource TitleTextBlockStyle}" Margin="18,0" Height="40"/>
         </StackPanel>
         <Button x:ConnectionId='1' Name="ButtonLogin"                            
-                Visibility="Visible" Margin="281,4,0,15.667" Content="Sign in" ></Button>
+                Visibility="Visible" Margin="0,4,10,0" Content="Sign in" HorizontalAlignment="Right" VerticalAlignment="Top" Width="109" ></Button>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="18,0,18,0">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0.167,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*" />
                 <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.ColumnSpan="2" 
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                       HorizontalAlignment="Center"
                        Style="{StaticResource BodyTextBlockStyle}" 
-                       Text="List of cowpokes you can howdy!" TextWrapping="Wrap" Margin="0,0,0,524.5" Grid.RowSpan="5"/>
-            <ListView  Grid.Row="1" Grid.ColumnSpan="2" Name="ListItems" Margin="0,43,0,3.5" Grid.RowSpan="4" ItemsSource="{Binding Mode=OneWay}">
+                       Text="List of cowpokes you can howdy!" TextWrapping="Wrap" Grid.RowSpan="4" Margin="0,0,0.167,9.375"/>
+            <ListView  Grid.Row="1" Grid.ColumnSpan="2" Name="ListItems" Margin="0,43,0.167,3.167" Grid.RowSpan="4" ItemsSource="{Binding Mode=OneWay}">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -46,7 +48,7 @@
                 </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid Name="HowdyPanel">
+                        <Grid Name="HowdyPanel" Background="{Binding color}">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="*" />
@@ -56,8 +58,8 @@
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
 
-                            <TextBlock Grid.Row="0"  Grid.Column="0" Style="{StaticResource BodyTextBlockStyle}" Name="UserName" Text="{Binding Name}" VerticalAlignment="Center"></TextBlock>
-                            <Button x:ConnectionId='2' Grid.Row="0" Grid.Column="1" Name="HowdyButton"                           HorizontalAlignment="Right">Howdy!</Button>
+                            <TextBlock Margin="10,0,0,0" Grid.Row="0"  Grid.Column="0" Style="{StaticResource BodyTextBlockStyle}" Name="UserName" Text="{Binding Name}" VerticalAlignment="Center"></TextBlock>
+                            <Button x:ConnectionId='2' Margin="0,0,10,0" Grid.Row="0" Grid.Column="1" Name="HowdyButton"                           HorizontalAlignment="Right">Howdy!</Button>
                             <!--<CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" 
                                 Checked="CheckBoxComplete_Checked" Content="{Binding Name}" Margin="10,5" 
                                 VerticalAlignment="Center"/>-->
@@ -65,9 +67,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
+
         </Grid>
-        
+
     </Grid>
 </Page>
 

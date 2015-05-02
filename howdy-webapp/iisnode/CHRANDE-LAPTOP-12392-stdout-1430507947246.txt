@@ -1,0 +1,23 @@
+Express server listening on port \\.\pipe\5f4ef0d2-1b96-422d-b261-b18354e501dd
+[90mGET / [32m200 [90m16ms - 10.81kb[0m
+[90mGET /partners [36m304 [90m3ms[0m
+[90mGET /partners/sams-cakes [32m200 [90m4ms - 4.47kb[0m
+[90mGET /partners/css/bootstrap.min.css [33m404 [90m12ms[0m
+[90mGET /partners/css/full-width-pics.css [33m404 [90m15ms[0m
+[90mGET /partners/js/jquery.js [33m404 [90m6ms[0m
+[90mGET /partners/js/bootstrap.min.js [33m404 [90m14ms[0m
+[90mGET /partners/sams-cakes [32m200 [90m2ms - 4.47kb[0m
+[90mGET /partners/css/bootstrap.min.css [33m404 [90m11ms[0m
+[90mGET /partners/css/full-width-pics.css [33m404 [90m18ms[0m
+[90mGET /partners/js/bootstrap.min.js [33m404 [90m25ms[0m
+[90mGET /partners/js/jquery.js [33m404 [90m63ms[0m
+[90mGET /partners/css/bootstrap.min.css [33m404 [90m8ms[0m
+[90mGET /partners/css/full-width-pics.css [33m404 [90m1ms[0m
+[90mGET /partners/sams-cakes [32m200 [90m2ms - 4.47kb[0m
+[90mGET /partners/js/bootstrap.min.js [33m404 [90m5ms[0m
+[90mGET /partners/js/jquery.js [33m404 [90m21ms[0m
+[90mGET /partners/css/full-width-pics.css [33m404 [90m2ms[0m
+[90mGET /partners/css/bootstrap.min.css [33m404 [90m8ms[0m
+[90mGET /partners/sams-cakes [32m200 [90m3ms - 4.47kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m1ms - 4.47kb[0m
+[90mGET /partners/sams-cakes [32m200 [90m3ms - 4.5kb[0m

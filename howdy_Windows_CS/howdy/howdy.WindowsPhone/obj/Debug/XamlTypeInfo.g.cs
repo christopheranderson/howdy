@@ -529,5 +529,3 @@ namespace howdy.howdy_WindowsPhone_XamlTypeInfo
 }
 
 
-
-

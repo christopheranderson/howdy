@@ -1,0 +1,3 @@
+Express server listening on port \\.\pipe\e819cb90-990e-43ab-a37b-c6cdd4a8af50
+[90mGET /partners [36m304 [90m19ms[0m
+[90mGET /partners/sams-cakes [32m200 [90m5ms - 5.44kb[0m
