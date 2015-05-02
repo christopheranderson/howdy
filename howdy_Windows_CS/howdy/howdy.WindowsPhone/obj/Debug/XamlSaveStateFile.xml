@@ -1,6 +1,5 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\chrande\downloads\howdy\howdy_windows_cs\howdy\howdy.windowsphone\obj\debug\intermediatexaml\howdy.windowsphone.exe" HashGuid="722b0f42-d3b8-cfb6-56ec-b7f4cebaec46" />
     <ReferenceAssembly PathName="c:\users\chrande\downloads\howdy\howdy_windows_cs\packages\windowsazure.mobileservices.1.3.0\lib\wpa81\microsoft.windowsazure.mobile.dll" HashGuid="9ab4b265-fb21-8752-5898-094f17593689" />
     <ReferenceAssembly PathName="c:\users\chrande\downloads\howdy\howdy_windows_cs\packages\windowsazure.mobileservices.1.3.0\lib\wpa81\microsoft.windowsazure.mobile.ext.dll" HashGuid="d14f6c57-ffca-9ad1-126f-ce93487ab524" />
     <ReferenceAssembly PathName="c:\users\chrande\downloads\howdy\howdy_windows_cs\packages\newtonsoft.json.6.0.3\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="c79997c3-e7ec-c6d9-80a0-b6fbe9a32ff1" />
