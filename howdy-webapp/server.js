@@ -10,6 +10,7 @@ var express = require('express')
   , path = require('path')
   , appInsights = require('applicationinsights');
 
+// todo: set the iKey as an environment variable in azure
 appInsights.setup("9093acd8-5f7a-4b80-b8f8-aee1dae1255b").start();
 
 var app = express();
