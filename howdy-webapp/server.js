@@ -35,5 +35,6 @@ app.get('/', routes.index);
 partners(app);
 
 http.createServer(app).listen(app.get('port'), function(){
+  appInsights.client.trackEvent("Server start", {port: app.get('port')});
   console.log("Express server listening on port " + app.get('port'));
 });
